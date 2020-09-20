@@ -7,14 +7,14 @@ check50:
           - 3
         stdout: 6
         exit: 0
-    first:
+    second:
       - run: g++ -o one one.cpp;./one
         stdin: 
           - 10
           - 20
         stdout: 200
         exit: 0
-    first:
+    third:
       - run: g++ -o one one.cpp;./one
         stdin: 
           - -2
