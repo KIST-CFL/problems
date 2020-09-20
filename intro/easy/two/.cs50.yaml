@@ -1,6 +1,9 @@
 check50:
   checks:
-    hello world:
-      - run: python3 hello.py
-        stdout: Hello, world!
+    first:
+      - run: g++ -o one one.cpp;./one
+        stdin: 
+          - 2
+          - 3
+        stdout: 6
         exit: 0
