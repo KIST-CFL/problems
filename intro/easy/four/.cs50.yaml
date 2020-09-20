@@ -1,7 +1,7 @@
 check50:
   checks:
     first:
-      - run: g++ -o three three.cpp;./three
+      - run: g++ -o four four.cpp;./four
         stdout: |
           2
           4
