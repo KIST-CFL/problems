@@ -1,0 +1,14 @@
+check50:
+  checks:
+    first:
+      - run: g++ -o three three.cpp;./three
+        stdin: 
+          - 10
+        stdout: "Positive!"
+        exit: 0
+    second:
+      - run: g++ -o three three.cpp;./three
+        stdin: 
+          - -50
+        stdout: "Negative!"
+        exit: 0

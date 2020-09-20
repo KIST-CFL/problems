@@ -1,4 +1,23 @@
 check50:
-  files: &check50_files
-    - !exclude "*"
-    - !require one.c
+  checks:
+    first:
+      - run: g++ -o one one.cpp;./one
+        stdin: 
+          - 2
+          - 3
+        stdout: 6
+        exit: 0
+    second:
+      - run: g++ -o one one.cpp;./one
+        stdin: 
+          - 10
+          - 20
+        stdout: 200
+        exit: 0
+    third:
+      - run: g++ -o one one.cpp;./one
+        stdin: 
+          - -2
+          - 2576
+        stdout: -5152
+        exit: 0
