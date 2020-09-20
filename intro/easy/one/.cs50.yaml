@@ -1,7 +1,4 @@
 check50:
   files:
     -!exclude "*"
-    -!require mario.c
-
-submit50:
-  files:
+    -!require one.c
